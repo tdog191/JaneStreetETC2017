@@ -31,15 +31,7 @@ def main():
     #Default price is 1000, so try to make some profit on bonds:
     #990 is buy price and 1002 is sell price.
 
-    amountOfBondsPurchased = 5
-
-    bondAddID = 0
-
     write(exchange, {"type": "add", "order_id": 1, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 50})
-
-    amountOfBoundsSold = 6
-
-    bondSellID = 1
 
     write(exchange, {"type": "add", "order_id": 2, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 50})
 
