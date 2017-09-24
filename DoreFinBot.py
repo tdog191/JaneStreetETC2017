@@ -36,8 +36,8 @@ def main():
 
     i = 0
     for (i in range(0, 20)):
-        write(exchange, {"type": "add", "order_id": i++, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 40})
-        write(exchange, {"type": "add", "order_id": i++, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 40})
+        write(exchange, {"type": "add", "order_id": i += 1, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 40})
+        write(exchange, {"type": "add", "order_id": i += 1, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 40})
 
     #Exchange runs:
     print("The exchange replied:", hello_from_exchange, file=sys.stderr)
