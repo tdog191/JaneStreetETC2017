@@ -35,14 +35,14 @@ def main():
 
     bondAddID = 0
 
-    for bondAddID in amountOfBondsPurchased(0,5):
+    for bondAddID in range(0,5):
         write(exchange, {"type": "add", "order_id": bondAddID, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 5})
 
     amountOfBoundsSold = 6
 
     bondSellID = 1
 
-    for boundSellID in amountOfBoundsSold(1,6):
+    for boundSellID in range(1,6):
         write(exchange, {"type": "add", "order_id": bondsellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
 
     #Trading the VALBZ/VALE ADR pair:
