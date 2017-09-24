@@ -73,11 +73,11 @@ def main():
 
     write(exchange, {"type": "add", "order_id": 21, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 20})
 
-   write(exchange, {"type": "add", "order_id": 22, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 20})
+    write(exchange, {"type": "add", "order_id": 22, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 20})
 
-   write(exchange, {"type": "add", "order_id": 23, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 10})
+    write(exchange, {"type": "add", "order_id": 23, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 10})
 
-   write(exchange, {"type": "add", "order_id": 24, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 10})
+    write(exchange, {"type": "add", "order_id": 24, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 10})
 
 
 
