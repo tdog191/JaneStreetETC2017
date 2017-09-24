@@ -36,14 +36,14 @@ def main():
     bondAddID = 0
 
     for bondAddID in range(0,5):
-        write(exchange, {"type": "add", "order_id": bondAddID, "symbol": "BOND", "dir": "BUY", "price": 990, "size": 5})
+        write(exchange, {"type": "add", "order_id": bondAddID, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 5})
 
     amountOfBoundsSold = 6
 
     bondSellID = 1
 
     for boundSellID in range(1,6):
-        write(exchange, {"type": "add", "order_id": bondSellID, "symbol": "BOND", "dir": "SELL", "price": 1010, "size": 5})
+        write(exchange, {"type": "add", "order_id": bondSellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
 
     #Trading for stocks:
     #Goldman Sachs keeps falling so do not buy
@@ -52,7 +52,7 @@ def main():
     MSID = 7
 
     for MSID in range(7, 12):
-        write(exchange, {"type": "add", "order_id": MSID, "symbol": "MS", "dir": "BUY", "price": 3500 , "size": 1})
+        write(exchange, {"type": "add", "order_id": MSID, "symbol": "MS", "dir": "BUY", "price": 3900 , "size": 1})
         write(exchange, {"type": "add", "order_id": MSID, "symbol": "MS", "dir": "BUY", "price": 4500 , "size": 1})
 
     #Exchange runs:
