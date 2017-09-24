@@ -55,7 +55,29 @@ def main():
 
     write(exchange, {"type": "add", "order_id": 12, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 10})
 
+    write(exchange, {"type": "add", "order_id": 13, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 30})
 
+    write(exchange, {"type": "add", "order_id": 14, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 30})
+
+    write(exchange, {"type": "add", "order_id": 15, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 40})
+
+    write(exchange, {"type": "add", "order_id": 16, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 40})
+
+    write(exchange, {"type": "add", "order_id": 17, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 40})
+
+    write(exchange, {"type": "add", "order_id": 18, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 40})
+
+    write(exchange, {"type": "add", "order_id": 19, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 30})
+
+    write(exchange, {"type": "add", "order_id": 20, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 30})
+
+    write(exchange, {"type": "add", "order_id": 21, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 20})
+
+   write(exchange, {"type": "add", "order_id": 22, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 20})
+
+   write(exchange, {"type": "add", "order_id": 23, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 10})
+
+   write(exchange, {"type": "add", "order_id": 24, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 10})
 
 
 
