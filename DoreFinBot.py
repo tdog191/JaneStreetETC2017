@@ -35,9 +35,14 @@ def main():
 
     write(exchange, {"type": "add", "order_id": 2, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 20})
 
-    write(exchange, {"type": "add", "order_id": 2, "symbol": "MS", "dir": "BUY", "price": 3925, "size": 5})
+    write(exchange, {"type": "add", "order_id": 3, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 40})
 
-    write(exchange, {"type": "add", "order_id": 2, "symbol": "MS", "dir": "SELL", "price": 3940, "size": 5})
+    write(exchange, {"type": "add", "order_id": 4, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 40})
+
+    write(exchange, {"type": "add", "order_id": 5, "symbol": "BOND", "dir": "BUY", "price": 999, "size": 20})
+
+    write(exchange, {"type": "add", "order_id": 6, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 20})
+
 
 
 
