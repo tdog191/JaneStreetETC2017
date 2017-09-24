@@ -43,7 +43,7 @@ def main():
     bondSellID = 1
 
     for boundSellID in range(1,6):
-        write(exchange, {"type": "add", "order_id": bondsellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
+        write(exchange, {"type": "add", "order_id": bondSellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
 
     #Trading the VALBZ/VALE ADR pair:
     #Fair value changes over time but is always equal across the two.
