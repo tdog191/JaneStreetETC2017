@@ -7,7 +7,7 @@ import json
 
 def connect():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect(("test-exch-tanis", 25000))
+    s.connect(("production", 25000))
     return s.makefile('rw', 1)
 
 def write(exchange, obj):
@@ -35,16 +35,21 @@ def main():
 
     bondAddID = 0
 
-    for (bondAddID in amountOfBondsPurchased):
+    for bondAddID in amountOfBondsPurchased:
         write(exchange, {"type": "add", "order_id": bondAddID, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 5})
 
     amountOfBoundsSold = 6
 
     bondSellID = 1
 
-    for (boundSellID in amountOfBoundsSold):
+    for boundSellID in amountOfBoundsSold:
         write(exchange, {"type": "add", "order_id": bondsellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
-    
+
+    #Trading the VALBZ/VALE ADR pair:
+    #Fair value changes over time but is always equal across the two.
+    #Price out VALBZ and trade VALE:
+
+
     #Exchange runs:
     print("The exchange replied:", hello_from_exchange, file=sys.stderr)
     while (True):
