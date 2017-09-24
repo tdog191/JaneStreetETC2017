@@ -45,10 +45,15 @@ def main():
     for boundSellID in range(1,6):
         write(exchange, {"type": "add", "order_id": bondSellID, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 5})
 
-    #Trading the VALBZ/VALE ADR pair:
-    #Fair value changes over time but is always equal across the two.
-    #Price out VALBZ and trade VALE:
+    #Trading for stocks:
+    #Goldman Sachs keeps falling so do not buy
+    #Morgan Stanley is staying steadily, so I'll invest:
 
+    MSID = 7
+
+    for MSID in range(7, 12):
+        write(exchange, {"type": "add", "order_id": MSID, "symbol": "MS", "dir": "BUY", "price": 3995 , "size": 1})
+        write(exchange, {"type": "add", "order_id": MSID, "symbol": "MS", "dir": "BUY", "price": 4005 , "size": 1})
 
     #Exchange runs:
     print("The exchange replied:", hello_from_exchange, file=sys.stderr)
