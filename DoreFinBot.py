@@ -35,22 +35,17 @@ def main():
 
     bondAddID = 0
 
-        write(exchange, {"type": "add", "order_id": 1, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 50})
+    write(exchange, {"type": "add", "order_id": 1, "symbol": "BOND", "dir": "BUY", "price": 998, "size": 50})
 
     amountOfBoundsSold = 6
 
     bondSellID = 1
 
-        write(exchange, {"type": "add", "order_id": 2, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 50})
+    write(exchange, {"type": "add", "order_id": 2, "symbol": "BOND", "dir": "SELL", "price": 1002, "size": 50})
 
     #Trading for stocks:
     #Goldman Sachs keeps falling so do not buy
     #Morgan Stanley is staying steadily, so I'll invest:
-
-    MSID = 7
-
-        write(exchange, {"type": "add", "order_id": 3, "symbol": "MS", "dir": "BUY", "price": 4000 , "size": 1})
-        write(exchange, {"type": "add", "order_id": 4, "symbol": "MS", "dir": "BUY", "price": 4500 , "size": 1})
 
     #Exchange runs:
     print("The exchange replied:", hello_from_exchange, file=sys.stderr)
